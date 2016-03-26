@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\usr\\local\\nodejs\\node.exe',
+1 verbose cli   'C:\\usr\\local\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'stop' ]
+2 info using npm@3.3.12
+3 info using node@v5.5.0
+4 verbose run-script [ 'prestop', 'stop', 'poststop' ]
+5 info lifecycle node-foo@1.0.0~prestop: node-foo@1.0.0
+6 silly lifecycle node-foo@1.0.0~prestop: no script for prestop, continuing
+7 info lifecycle node-foo@1.0.0~stop: node-foo@1.0.0
+8 verbose lifecycle node-foo@1.0.0~stop: unsafe-perm in lifecycle true
+9 verbose lifecycle node-foo@1.0.0~stop: PATH: C:\usr\local\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Users\Thornton\Work\node-foo\node_modules\.bin;C:\usr\local\bin;C:\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\usr\local\java\jdk1.8.0_45\bin;C:\usr\local\java\jdk1.8.0_45\jre\bin;C:\usr\local\nodejs
+10 verbose lifecycle node-foo@1.0.0~stop: CWD: C:\Users\Thornton\Work\node-foo
+11 silly lifecycle node-foo@1.0.0~stop: Args: [ '/d /s /c', 'pkill --signal SIGINT node' ]
+12 silly lifecycle node-foo@1.0.0~stop: Returned: code: 1  signal: null
+13 info lifecycle node-foo@1.0.0~stop: Failed to exec stop script
+14 verbose stack Error: node-foo@1.0.0 stop: `pkill --signal SIGINT node`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (C:\usr\local\nodejs\node_modules\npm\lib\utils\lifecycle.js:232:16)
+14 verbose stack     at emitTwo (events.js:100:13)
+14 verbose stack     at EventEmitter.emit (events.js:185:7)
+14 verbose stack     at ChildProcess.<anonymous> (C:\usr\local\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:100:13)
+14 verbose stack     at ChildProcess.emit (events.js:185:7)
+14 verbose stack     at maybeClose (internal/child_process.js:821:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+15 verbose pkgid node-foo@1.0.0
+16 verbose cwd C:\Users\Thornton\Work\node-foo
+17 error Windows_NT 10.0.10586
+18 error argv "C:\\usr\\local\\nodejs\\node.exe" "C:\\usr\\local\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "stop"
+19 error node v5.5.0
+20 error npm  v3.3.12
+21 error code ELIFECYCLE
+22 error node-foo@1.0.0 stop: `pkill --signal SIGINT node`
+22 error Exit status 1
+23 error Failed at the node-foo@1.0.0 stop script 'pkill --signal SIGINT node'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the node-foo package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     pkill --signal SIGINT node
+23 error You can get their info via:
+23 error     npm owner ls node-foo
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
